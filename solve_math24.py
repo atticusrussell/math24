@@ -36,7 +36,7 @@ def format_solution(nums, ops, pattern):
 def main():
     # Check if the correct number of arguments are provided
     if len(sys.argv) != 5:
-        print("Usage: python math24.py num1 num2 num3 num4")
+        print("Usage: python3 solve_math24.py num1 num2 num3 num4")
         sys.exit(1)
 
     # Parse command line arguments

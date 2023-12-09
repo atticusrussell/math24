@@ -22,7 +22,7 @@ Ensure you have Python 3 installed on your system. The script uses the `fraction
 3. Run the script with Python and pass four numbers as arguments. For example:
 
    ```bash
-   python3 math24.py 3 3 8 8
+   python3 solve_math24.py 3 3 8 8
    ```
 
 4. The script will output a solution if one is possible or indicate if no solution can be found.
