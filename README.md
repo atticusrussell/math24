@@ -15,17 +15,17 @@ This repository contains a Python script designed to solve Math24 problems. Math
 
 Ensure you have Python 3 installed on your system. The script uses the `fractions` module from the Python Standard Library, so no additional dependencies are required.
 
-<!-- ## Usage
+## Usage
 
 1. Clone this repository to your local machine.
 2. Navigate to the directory containing the script.
 3. Run the script with Python and pass four numbers as arguments. For example:
 
    ```bash
-   python math24.py 3 3 8 8
+   python3 math24.py 3 3 8 8
    ```
 
-4. The script will output a solution if one is possible or indicate if no solution can be found. -->
+4. The script will output a solution if one is possible or indicate if no solution can be found.
 
 
 ## Acknowledgments

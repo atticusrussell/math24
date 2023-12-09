@@ -1,6 +1,7 @@
 import itertools
 import operator
 from fractions import Fraction
+import sys
 
 def solve_math24(numbers):
     # Convert inputs to fractions to handle decimals and fractions
@@ -32,5 +33,18 @@ def format_solution(nums, ops, pattern):
     return pattern.replace('a', nums[0]).replace('b', nums[1]).replace('c', nums[2]).replace('d', nums[3])\
                   .replace('o', symbols[0], 1).replace('o', symbols[1], 1).replace('o', symbols[2], 1)
 
-# Example usage
-print(solve_math24([1.5, 6, 8, 9]))  # Example input
+def main():
+    # Check if the correct number of arguments are provided
+    if len(sys.argv) != 5:
+        print("Usage: python math24.py num1 num2 num3 num4")
+        sys.exit(1)
+
+    # Parse command line arguments
+    numbers = [Fraction(arg) for arg in sys.argv[1:]]
+
+    # Solve and print the solution
+    solution = solve_math24(numbers)
+    print(f"Solution: {solution}")
+
+if __name__ == "__main__":
+    main()
