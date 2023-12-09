@@ -12,5 +12,8 @@ class TestMath24Solver(unittest.TestCase):
     def test_decimal_input(self):
         self.assertEqual(solve_math24([1.5, 6, 8, 9]), '8 * (3/2 + (9 / 6))')
 
+    def test_fraction_input(self):
+        self.assertEqual(solve_math24([3/2, 6, 8, 9]), '8 * (3/2 + (9 / 6))')
+
 if __name__ == '__main__':
     unittest.main()
